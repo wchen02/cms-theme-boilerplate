@@ -17,6 +17,9 @@
   "scripts": {
     "eslint": "eslint src",
     "lint": "eslint src && prettier --list-different 'src/**/*.js' 'src/**/*.json'",
-    "prettier:write": "prettier --write 'src/**/*.js' 'src/**/*.json'"
+    "prettier:write": "prettier --write 'src/**/*.js' 'src/**/*.json'",
+    "fetch": "hs fetch my-website-theme src",
+    "upload": "hs upload src my-website-theme",
+    "watch": "hs watch src my-website-theme"
   }
 }
