@@ -92,32 +92,17 @@
 
         {# Blog listing #}
         {% for content in contents %}
-          {# On the blog listing page, the first post will be featured above older posts #}
-          {% if (loop.first && current_page_num == 1 && !topic) %}
-            <article class="blog-index__post blog-index__post--large">
-              <a class="blog-index__post-image blog-index__post-image--large"
-                {% if content.featured_image %}
-                  style="background-image: url('{{ content.featured_image }}')";
-                {% endif %}
-                href="{{ content.absolute_url }}"></a>
-              <div class="blog-index__post-content  blog-index__post-content--large">
-                <h2><a href="{{ content.absolute_url }}">{{ content.name }}</a></h2>
-                {{ content.post_list_content }}
-              </div>
-            </article>
-          {% else %}
             <article class="blog-index__post blog-index__post--small">
-              <a class="blog-index__post-image blog-index__post-image--small"
+              <a class="blog-index__post-image blog-index__post-image--small" href="{{ content.absolute_url }}">
                 {% if content.featured_image %}
-                  style="background-image: url('{{ content.featured_image }}')";
+                  <img src="{{ content.featured_image }}" />
                 {% endif %}
-                href="{{ content.absolute_url }}"></a>
+            </a>
               <div class="blog-index__post-content  blog-index__post-content--small">
                 <h2><a href="{{ content.absolute_url }}">{{ content.name }}</a></h2>
                 {{ content.post_list_content|truncatehtml(100) }}
               </div>
             </article>
-          {% endif %}
         {% endfor %}
         {# End blog listing #}
 
