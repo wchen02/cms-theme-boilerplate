@@ -41,8 +41,21 @@
   order: 0;
 }
 
+.body-container--blog-index .content-wrapper {
+  max-width: 100%;
+}
+
+.blog-index__post-image, .blog-index__post-content {
+  max-width: 1240px;
+  margin: auto;
+}
+
 .blog-index__post {
   border-bottom: 1px gray dotted;
+}
+
+.blog-index__post *:last-child {
+  border-bottom: 0;
 }
 
 .blog-index__post-image {
