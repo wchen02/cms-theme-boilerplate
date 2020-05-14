@@ -94,3 +94,32 @@
 .systems-page {
   max-width: 100%;
 }
+
+.highlighter-rouge {
+  background: #263238;
+  color: #eff;
+  padding: .1rem .5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.highlighter-rouge pre.highlight {
+  margin: 10px;
+}
+
+h1 {
+  text-shadow: 1px 1px 2px #3f3f3f;
+}
+
+blockquote {
+  border-left: 2px solid #9fd2e3;
+  border-left-color: #9fd2e3!important;
+  margin: 1em 1em;
+  padding: 0.75em 1em;
+  background-color: #EEF7FA;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+}
+
+blockquote *:last-child, footer *:last-child {
+  margin-bottom: 0;
+}
