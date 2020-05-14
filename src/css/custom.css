@@ -8,3 +8,25 @@
     width: 500px;
   }
 }
+
+.blog-header__inner {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 1240px;
+}
+
+.header__column {
+  display: flex;
+}
+
+.header__row-1 {
+  width: 300px;
+  padding: 0;
+  height: 70px;
+  order: 1;
+}
+
+.header__row-2 {
+  width: auto;
+  order: 0;
+}
